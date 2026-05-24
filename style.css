@@ -1,0 +1,94 @@
+:root {
+  --text-color: #111844;
+  --primary-color: #4b5694;
+  --secondary-color: #7288ae;
+  --background-color: #eae0cf;
+  --border-color: #cfc6b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vh, 5rem);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto Slab", "Roboto", serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+button {
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.3 ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  transition: all 0.5 ease;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.container-addition {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* gap: clamp(1rem, 3vw, 2rem); */
+}
+
+input {
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+#main {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}

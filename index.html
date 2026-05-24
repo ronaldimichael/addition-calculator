@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Simple Addition App</title>
   </head>
   <header>
@@ -15,18 +22,24 @@
           A simple web-based calculator built with HTML, CSS, and JavaScript.
         </p>
         <p>
-          Enter a number into the first and second input field then press
-          "Calculate" button
+          Enter a number into the first and second input field then press "<span
+            class="bold-text"
+            >Calculate</span
+          >" button
         </p>
       </article>
       <div class="container-addition">
-        <label for="container-addition_firstNumber">Input first number: </label>
-        <input type="number" id="container-addition_firstNumber" /><br />
-        <br />
-        <label for="container-addition_secondNumber"
-          >Input second number:
-        </label>
-        <input type="number" id="container-addition_secondNumber" />
+        <input
+          type="number"
+          id="container-addition_firstNumber"
+          placeholder="Input first number"
+        />
+        <p class="bold-text">+</p>
+        <input
+          type="number"
+          placeholder="Input second number"
+          id="container-addition_secondNumber"
+        />
         <button class="container-addition_calculateBtn">Calculate</button>
         <div class="container-addition_showAddNums"></div>
         <div class="container-addition_showResult"></div>
