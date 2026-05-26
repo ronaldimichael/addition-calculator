@@ -17,7 +17,7 @@
   </header>
   <body>
     <div id="main">
-      <article class="description">
+      <section class="description">
         <p>
           A simple web-based calculator built with HTML, CSS, and JavaScript.
         </p>
@@ -27,7 +27,7 @@
             >Calculate</span
           >" button
         </p>
-      </article>
+      </section>
       <div class="container-addition">
         <input
           type="number"
@@ -40,11 +40,9 @@
           placeholder="Input second number"
           id="container-addition_secondNumber"
         />
-        <button class="container-addition_calculateBtn">Calculate</button>
-        <div class="container-addition_showAddNums"></div>
-        <div class="container-addition_showResult"></div>
       </div>
-      <div class="container-result"></div>
+      <button class="container-addition_calculateBtn">Calculate</button>
+      <div class="container-result">The result will shown here</div>
     </div>
   </body>
   <script src="script.js"></script>

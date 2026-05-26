@@ -19,9 +19,7 @@ input::-webkit-inner-spin-button {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding-bottom: clamp(1.5rem, 4vw, 1.5rem);
 }
 
@@ -54,7 +52,6 @@ button {
   background-color: var(--secondary-color);
   color: var(--text-color);
   cursor: pointer;
-  transition: transform 0.3 ease;
 }
 
 button:hover {
@@ -68,11 +65,11 @@ button:active {
 
 .container-addition {
   display: flex;
-  flex: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  /* gap: clamp(1rem, 3vw, 2rem); */
+  /* flex-direction: column; */
+  gap: 20px;
 }
 
 input {
@@ -87,9 +84,14 @@ input:focus {
   outline: none;
 }
 
-#main {
-  /* display: flex;
-  flex-direction: column;
+.container-result {
+  display: flex;
   justify-content: center;
-  align-items: center; */
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
